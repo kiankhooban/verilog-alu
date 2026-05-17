@@ -94,7 +94,7 @@ endcase
 ---
 
 ## Simulation Results
-
+```
 Test results using A=3 (0011) and B=5 (0101):
 op=000 | A=3  B=5  | result=1  overflow=0 | AND  -- 0011 & 0101 = 0001
 op=001 | A=3  B=5  | result=7  overflow=0 | OR   -- 0011 | 0101 = 0111
@@ -109,7 +109,7 @@ op=110 | A=1  B=15 | result=0  overflow=0 | GT   -- 1  > 15 = false
 op=110 | A=5  B=5  | result=0  overflow=0 | GT   -- 5  > 5  = false
 op=111 | A=5  B=5  | result=1  overflow=0 | EQ   -- 5  == 5 = true
 op=111 | A=3  B=5  | result=0  overflow=0 | EQ   -- 3  == 5 = false
-
+```
 ---
 
 ## How To Run
