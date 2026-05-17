@@ -59,12 +59,14 @@ overflow = 1     (overflow detected!)
 ---
 
 ## Project Structure
+```
 ALU_Project/
 ├── README.md
 ├── src/
 │   └── ALU_Simple.v        -- ALU circuit
 └── testbench/
-└── test_ALU_Simple.v   -- test bench
+    └── test_ALU_Simple.v   -- test bench
+```
 
 ---
 
@@ -131,6 +133,8 @@ vvp alu_sim
 ---
 
 ## Concepts Demonstrated
+```
+
 ✅ Behavioural modeling using always blocks
 ✅ Case statements for operation selection
 ✅ Overflow detection using concatenation operator {}
@@ -140,34 +144,5 @@ vvp alu_sim
 ✅ Comprehensive test bench with edge cases
 ✅ Multi-bit vector operations [3:0]
 
+```
 ---
-
-## What I Learned
-
-Building this ALU taught me how processors handle arithmetic at the 
-hardware level. Key insights:
-
-- Hardware computes ALL operations simultaneously -- the op input 
-  just selects which result to use
-- Overflow is a real hardware problem that processors handle with 
-  flag registers
-- The concatenation operator {} is how Verilog captures extra bits 
-  from arithmetic operations
-- Behavioural modeling lets you describe complex hardware behaviour 
-  without specifying individual gates
-
----
-
-## Author
-
-**Kian** -- Computer Science Student, York University (Lassonde School of Engineering)
-
----
-
-## Next Steps
-
-- [ ] Expand to 8-bit ALU
-- [ ] Add shift operations (left shift, right shift)
-- [ ] Add signed number support
-- [ ] Connect ALU to registers to build a simple datapath
-- [ ] Build a complete simple CPU
